@@ -110,7 +110,15 @@ body {
     left: 150px; /* 单个六边形之间的水平间距 */
 }
 
-
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* 长方形的宽度 */
+    height: 65px; /* 长方形的高度 */
+    position: absolute;
+    background-color: gray; /* 长方形的背景色 */
+}
 
 
 .circle {
@@ -124,28 +132,63 @@ body {
     background-color: gray; /* 默认颜色 */
 }
 
-.circle.top-left {
+.circle.player1 {
     top: 13px;
-    left: 0;
+    left: 1px;
 }
 
-.circle.top-right {
+.circle.player2 {
     top: 13px;
-    right: 0;
+    right: 1px;
 }
 
-.circle.bottom-left {
+.circle.player3 {
     bottom: 13px;
-    left: 0;
+    left: 1px;
 }
 
-.circle.bottom-right {
+.circle.player4 {
     bottom: 13px;
-    right: 0;
+    right: 1px;
+}
+
+.circle.whale {
+    width: 20px;
+    height: 20px;
+    top: 3px;
+}
+
+.circle.shark {
+    width: 16px;
+    height: 16px;
+    left: 1px;
+}
+
+.circle.monster {
+    width: 25px;
+    height: 25px;
+    bottom: 6px;
+}
+
+.circle.boat1 {
+    width: 15px;
+    height: 15px;
+    top: 5px;
+}
+
+.circle.boat2 {
+    width: 15px;
+    height: 15px;
+}
+
+.circle.boat3 {
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
 }
 
 .number {
-    font-size: 12px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
