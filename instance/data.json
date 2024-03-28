@@ -1,0 +1,19 @@
+{
+    "player":{
+        "player1":{
+            "name":"player1",
+            "hp":100,
+            "mp":100,
+            "attack":10,
+            "defense":10,
+            "speed":10
+        }
+    },
+    "plate":{
+        "plate1":{
+            "name":"plate1",
+            "xy":[100,100]
+        }
+    }
+    
+}
