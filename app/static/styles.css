@@ -8,11 +8,22 @@ body {
     width: 1480px;
     background-color: #f0f0f0;
 }
+#chat, #text {
+    width: calc(100% - 20px); /* 减去一些边距 */
+    margin: 0 10px; /* 上下保持为0，左右添加边距 */
+}
 
 .board_left {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
+
+    
+    /* justify-content: flex-start; 使内容从顶部开始 */
+    /* align-items: flex-start; 使内容从左侧开始 */
+
+
     width: 250px;
     height: 680px;
     border: 1px dashed #0080ff;

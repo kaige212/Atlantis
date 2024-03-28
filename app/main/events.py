@@ -2,7 +2,7 @@ from flask import request,session
 from flask_socketio import emit, join_room, leave_room
 from .. import socketio
 
-@socketio.on('joined', namespace='/chat')
+@socketio.on('joined', namespace='/Atlantis')
 def joined(message):
     """客户端进入房间时发送。将状态消息广播到房间中的所有人。"""
     room = message['room']
@@ -11,7 +11,7 @@ def joined(message):
     emit('status', {'msg': name + ' 已经进入了房间。'}, room=room)  # 广播入房间消息
 
 
-@socketio.on('text', namespace='/chat')
+@socketio.on('text', namespace='/Atlantis')
 def text(message):
     """用户输入新消息时客户端发送。消息发送给房间里的所有人。"""
     # 从消息中获取房间名称而不是 session
@@ -19,7 +19,7 @@ def text(message):
     emit('message', {'msg': message['name'] + ': ' + message['msg']}, room=room)
 
 
-@socketio.on('left', namespace='/chat')
+@socketio.on('left', namespace='/Atlantis')
 def left(message):
     """客户端离开房间时发送。将状态消息广播到房间中的所有人。"""
     # 从消息中获取房间名称而不是 session
