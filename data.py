@@ -17,8 +17,8 @@ data={
             
             "type_card":"shark", #shark:产生一个鲨鱼 whale：产生一个鲸鱼 dragon：产生一个海龙  whirlwind：产生一个旋风  valcano：火山喷发 
                                  #shark_3:获得功能卡，鲨鱼走三步 
-            "content":["00",["01","12"],"shark","whale",]
-            
+            "content":[["00","31"],["01","12"],"shark","whale",]
+
         }
     },
 
