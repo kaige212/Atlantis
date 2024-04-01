@@ -26,3 +26,9 @@ def Atlantis(room_name):
     # 房间名现在通过 URL 动态获取
     room = room_name
     return render_template('Atlantis.html', name=name, room=room)
+
+# 新增动态房间 URL
+@main.route('/phaser')
+def phaser():
+    
+    return render_template('phaser.html')
