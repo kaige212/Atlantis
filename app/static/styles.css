@@ -31,6 +31,7 @@ body {
 
 .board_right {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
     width: 250px;
@@ -170,18 +171,18 @@ body {
     bottom: 6px;
 }
 
-.circle.boat1 {
+.circle.boat0 {
     width: 15px;
     height: 15px;
     top: 5px;
 }
 
-.circle.boat2 {
+.circle.boat1 {
     width: 15px;
     height: 15px;
 }
 
-.circle.boat3 {
+.circle.boat2 {
     width: 15px;
     height: 15px;
     bottom: 5px;
@@ -193,4 +194,48 @@ body {
     justify-content: center;
     align-items: center;
     color: black;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+}
+
+.overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }

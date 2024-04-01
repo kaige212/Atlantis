@@ -30,7 +30,28 @@
         <!-- 游戏记录，右边 -->
         <div class="board_right" id="display_right">
             <!--  -->
+            <div id="right_board">
+                <!--  -->
+            </div>
+            <!--<p>选择一个棋子：</p>
+            <select id="playerSelector">
+            </select>-->
         </div> <!-- Display coordinates here -->
+
+        <!-- 弹窗 -->
+        <div class="overlay" id="overlayclick" onclick="closePopup()"></div> <!-- 点击遮罩层关闭弹窗 -->
+        <div class="overlay2" id="overlay2click" onclick="closePopup2()"></div> <!-- 点击遮罩层关闭弹窗 -->
+        <div id="popup" style="display: none;">
+            <p>选择一个棋子：</p>
+            <select id="playerSelector">
+            </select>
+            <button id="popupclick" onclick="setPlayer()">确定</button>
+        </div>
+        <div id="popup2" style="display: none;">
+            <p>确定登船：</p>
+            <button id="popup2click" onclick="setonBoat()">确定</button>
+        </div>
+        
 
 
     <script src="{{url_for('static',filename='Atlantis.js')}}"></script>
@@ -38,4 +59,5 @@
     <script type="text/javascript" src="{{url_for('static',filename='socket.io.min.js')}}"></script>
     <script type="text/javascript" src="{{url_for('static',filename='my_socketio.js')}}"></script>
     </body>
+    
 </html>
